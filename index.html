@@ -2,196 +2,78 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>JoinRace | Code with Me</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <main>
-        <div class="logo">JoinRace</div>
-        <div class="social">
-            <div class="bar"></div>
-            <a href=""><i class="fab fa-facebook"></i></a>
-            <a href=""><i class="fab fa-instagram"></i></a>
-            <a href=""><i class="fab fa-twitter"></i></a>
+    <section class="tela-inicial">
+        <div class="imagemfundo">
+            <img src="./imagem-fundo.jpg" alt="">
         </div>
-        <div class="menu">
-            <i class="fas fa-bars"></i>
-        </div>
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
 
-                    <div class="green"></div> <!-- você pode criar uma nova cor no CSS -->
-                    <div class="black"></div>
-                    <div class="content">
-                        <div class="title">
-                            <div class="small">DIDDY</div>
-                            <div class="big">KONG</div>
-                        </div>
-                        <div class="image">
-                            <img src="./images/your-image.png" alt="New Slide Image">
-                        </div>
-
-                        <div class="description">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae commodi ullam eligendi pariatur, harum nisi nobis facilis, omnis labore at facere quisquam fugit a quod? Culpa sint itaque nostrum quis!
-                            </p>
-                        </div>
-
-                        <div class="specs green-c">
-                            <span><b>123</b> MPH</span>
-                            <span><b>0-100</b> KMPH</span>
-                            <span><b>400</b> KW</span>
-                            <button class="green-c">Discover Now <i class="fas fa-arrow-right"></i></button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="swiper-slide first">
-                    <div class="yellow"></div>
-                    <div class="black"></div>
-                    <div class="content">
-                        <div class="title">
-                            <div class="small">DONKEY</div>
-                            <div class="big"><span>K</span><span>O</span><span>N</span><span>G</span></div>
-                        </div>
-                        <div class="image">
-                            <img src="./images/283688.png" alt="">
-                        </div>
-
-                        <div class="description">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae commodi ullam eligendi pariatur, harum nisi nobis facilis, omnis labore at facere quisquam fugit a quod? Culpa sint itaque nostrum quis!
-                            </p>
-                        </div>
-
-                        <div class="specs">
-                            <span><b>O</b> Protagonista</span>
-                            <span><b>0-100</b> KMPH</span>
-                            <span><b>350</b> KW</span>
-                            <button>Discover Now <i class="fas fa-arrow-right"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="red"></div>
-                    <div class="black"></div>
-                    <div class="content">
-                        <div class="title">
-                            <div class="small">CRANKY</div>
-                            <div class="big">KONG</div>
-                        </div>
-                        <div class="image">
-                            <img src="./images/DKCRHD_Cranky_Kong.png" alt="">
-                        </div>
-
-                        <div class="description">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae commodi ullam eligendi pariatur, harum nisi nobis facilis, omnis labore at facere quisquam fugit a quod? Culpa sint itaque nostrum quis!
-                            </p>
-                        </div>
-
-                        <div class="specs red-c">
-                            <span><b>o</b> antagonista</span>
-                            <span><b>0-100</b> KMPH</span>
-                            <span><b>350</b> KW</span>
-                            <button class="red-c">Discover Now <i class="fas fa-arrow-right"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="blue"></div>
-                    <div class="black"></div>
-                    <div class="content">
-                        <div class="title">
-                            <div class="small">DIXIE</div>
-                            <div class="big">KONG</div>
-                        </div>
-                        <div class="image">
-                            <img src="./images/WiiU_DKCountry_char07_E3.webp" alt="">
-                        </div>
-
-                        <div class="description">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae commodi ullam eligendi pariatur, harum nisi nobis facilis, omnis labore at facere quisquam fugit a quod? Culpa sint itaque nostrum quis!
-                            </p>
-                        </div>
-                        
-                        <div class="specs blue-c">
-                            <span><b>302</b> MPH</span>
-                            <span><b>0-100</b> KMPH</span>
-                            <span><b>350</b> KW</span>
-                            <button class="blue-c">Discover Now <i class="fas fa-arrow-right"></i></button>
-                        </div>
-                    </div>
-                </div>
+        <div class="conteudo-inicial">
+            <div class="imgtitulo hidden">
+                <img src="./Donkey-Kong-Logo.png" alt="">
             </div>
-            <div class="swiper-pagination"></div>
+
+            <div class="diddy hidden">
+                <img src="./imagem-tela-inicial.png" alt="">
+            </div>
         </div>
-    </main>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    </section>
 
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".swiper", {
-            direction: "vertical",
-            slidesPerView: 1,
-            spaceBetween: 30,
-            mousewheel: true,
-            effect: "coverflow",
-            speed: 2000,
-            coverflowEffect: {
-                rotate: 50,
-                stretch: 0,
-                depth: 100,
-                modifier: 1,
-                slideShadows: true,
-            },
+    <section class="biografia-kong">
+        <div class="conteudo hidden">
+            <h1>HISTORIA DONKEY KONG</h1>
+            <p>Desde o surgimento dos primeiros jogos eletrônicos até hoje, os videogames já viram seres e criaturas de todos os tipos, e nesse mundo de incríveis criaturas, o reino animal é muito bem representado. Temos leões, ratos, pandas, ouriços, cavalos, guaxinins e todo o tipo de bicho. No meio dessa bicharada toda, claro que não podiam faltar nossos primos primatas. Quando o assunto é macaco nos videogames, estamos bem servidos. De uma família só temos uma enormidade de famosos símios, quase todos atendendo pelo sobrenome Kong. Contudo, é do mais famoso e importante gorila dessa família que iremos tratar aqui. Um dos mais importantes personagens da indústria de jogos eletrônicos, um dos principais mascotes da Nintendo, protagonista de uma das melhores séries de plataforma de todos os tempos, Donkey Kong.</p>
+        </div>
 
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-                renderBullet: function (index, className) {
-                    return '<span class="' + className + '"> <span>' + String(index + 1).padStart(2, '0') + '</span></span>';
-                },
-            },
-        });
+        <div class="imagemdecanto hidden">
+            <img src="./cranky_kong.jpg" alt="">
+        </div>
+    </section>
+
+    <div class="titulo hidden">
+        <h1>EXPLORAR</h1>
+    </div>
+
+    <section class="secoes">
 
 
-        gsap.from(".first .yellow", {
-            y: -1000,
-            duration: 2
-        })
-        gsap.from(".first .black", {
-            y: 1000,
-            duration: 2
-        })
-        gsap.from(".first img", {
-            x: 1000,
-            duration: 2
-        })
-        gsap.from(".first .small", {
-            y: 100,
-            opacity: 0,
-            delay: 2.1
-        })
-        gsap.from(".first .big span", {
-            y: 100,
-            opacity: 0,
-            stagger: 0.2,
-            delay: 2.1
-        })
-    </script>
+        <div class="jogos-kong" onclick="window.location.href='jogos.html'" style="cursor: pointer;">
+            <div class="jogos">
+                <div class="imagem-jogos hidden">
+                    <img src="./jogos-kong.jpg" alt="">
+                </div>
+                <h1>GAMES</h1>
+            </div>
+        </div>
+
+        <div class="personagens-donkey" onclick="window.location.href='macaco.html'" style="cursor: pointer;">
+            <div class="personagens">
+                <div class="imagem-personagens hidden">
+                    <img src="./personagem-imagem.png" alt="">
+                </div>
+                <h1>MACACOS</h1>
+            </div>
+        </div>
+
+        <div class="mapas-kong">
+            <div class="mapas">
+                <div class="imagem-mapas hidden">
+                    <img src="./imagem-mapa.jpg" alt="">
+                </div>
+                <h1>MAPAS</h1>
+            </div>
+        </div>
+
+    </section>
 </body>
+
+<script src="script.js" defer></script>
 
 </html>
