@@ -4,60 +4,44 @@
     box-sizing: border-box;
 }
 
+/*1° seção*/
 .tela-inicial {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100vh; 
     overflow: hidden;
 }
 
-.tela-inicial .imagemfundo img {
+
+.tela-inicial .video-fundo video {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    z-index: -1;
+    object-fit: cover; 
+    z-index: -1; 
 }
 
-.conteudo-inicial {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    gap: 3vw;
-    padding: 0 2vw;
+.icone-titulo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10; 
 }
 
-.imgtitulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-.imgtitulo img {
-    width: auto;
-    max-width: 50vw;
+.icone-titulo img {
+    width: 120px;
     height: auto;
-    max-height: 80vh;
-    object-fit: contain;
-    margin: 0;
+    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.6));
 }
 
-.diddy {
-    margin-left: auto;
-}
-
-.diddy img {
-    height: 100vh;
-    width: auto;
-    max-width: 39vw;
-    object-fit: contain;
-
-    filter: drop-shadow(40px 10px 40px rgba(0, 0, 0, 0.5));
-    transition: transform 0.3s ease, filter 0.3s ease;
+.tela-inicial::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: -1;
 }
 
 
@@ -157,6 +141,38 @@
     font-size: 1.5rem;
     color: black;
 }
+
+/*seção4*/
+
+.pictures {
+    width: 100%;
+    padding: 0 0;
+    background-color: #1e7db5;
+}
+
+
+.pictures .titulosecao h1 {
+    font-size: 2.5em;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10rem;
+    letter-spacing: 3px;
+}
+
+/* ===== Imagens ===== */
+.pictures .imagens {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.pictures .imagens img {
+    width: 100%;  
+    height: auto; 
+    display: block;
+    object-fit: cover;
+    padding: 0 0 30px;
+}
+
 
 @media (max-width: 1260px) {
     .biografia-kong {

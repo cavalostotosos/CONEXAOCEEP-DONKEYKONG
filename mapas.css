@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tela-inicial {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* ocupa toda a altura da tela */
+    overflow: hidden;
+}
+
+/* ===== IMAGEM DE FUNDO ===== */
+.tela-inicial .imagem-fundo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* preenche sem distorcer */
+    z-index: 0;
+}
+
+/* ===== BOTÃO VOLTAR ===== */
+.tela-inicial .botaovoltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
+.tela-inicial .botaovoltar img {
+    width: 60px;
+    /* ajuste conforme necessário */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.tela-inicial .botaovoltar img:hover {
+    transform: scale(1.1);
+}
+
+/* ===== LOGO NO CANTO INFERIOR DIREITO ===== */
+.tela-inicial .logo-titulo {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    z-index: 2;
+}
+
+.tela-inicial .logo-titulo img {
+    width: 250px;
+    /* tamanho médio, ajustável */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.tela-inicial .logo-titulo img:hover {
+    transform: scale(1.05);
+}
+
+/* ===== SEÇÃO IMAGENS E GIFS ===== */
+.mapas-imgs-gifs {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(7, 83, 25);
+}
+
+/* Cada item (imagem ou gif) ocupa 100% da largura */
+.mapas-imgs-gifs .imagens-gifs {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== ESTILO PARA AS IMAGENS ===== */
+.mapas-imgs-gifs .imagens-gifs img {
+    width: 100%;
+    /* preenche toda a largura */
+    height: auto;
+    /* mantém proporção original */
+    display: block;
+    object-fit: cover;
+    /* garante preenchimento sem distorção */
+}
+
+/* ===== ESTILO PARA OS VÍDEOS ===== */
+.mapas-imgs-gifs .imagens-gifs video {
+    width: 100%;
+    /* preenche toda a largura */
+    height: auto;
+    /* mantém proporção */
+    display: block;
+    object-fit: cover;
+}
+
+.titulo-secao-mapas {
+    font-size: 2.2em;
+    color: black;
+    text-align: center;
+    margin-bottom: 10rem;
+    letter-spacing: 3px;
+}
+
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+    .tela-inicial .botaovoltar img {
+        width: 45px;
+    }
+
+    .tela-inicial .logo-titulo img {
+        width: 180px;
+    }
+}
